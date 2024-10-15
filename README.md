@@ -5,9 +5,13 @@ Just a knowledge dump of everything wayland
 ## Goal
 
 a. To comprehend how the Wayland Protocol is used and how it works
+
 b. To be able to use `wayland-client`, `wayland-server` and other headers required to become a client of Wayland 
+
 c. To be able to implement basic client-server interactions with Wayland 
+
 d. To further understand how a Wayland based compositor would operate and function
+
 e. Finally, just to experience "fun" while I die inside
 
 ## References 
