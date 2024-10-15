@@ -43,18 +43,18 @@ flowchart TD
     A[Start - Main Function] --> B[Connect to Wayland Display]
     B -->|Success| C[Get Wayland Registry]
     C --> D[Add Registry Listener]
-    D --> E[Wayland Roundtrip (Synchronize with Server)]
+    D --> E[Wayland Roundtrip - Synchronize with Server]
     E -->|Success| F[Check for Compositor and xdg_wm_base]
     F -->|Success| G[Create Wayland Surface]
     G --> H[Create xdg_surface]
-    H --> I[Create xdg_toplevel (Window)]
+    H --> I[Create xdg_toplevel Window]
     I --> J[Commit Surface to Display]
     J --> K[Initialize EGL]
     
     K -->|Success| L[Main Rendering Loop]
     L --> M[Dispatch Wayland Events]
     M -->|Dispatch Success| N[Render Triangle with OpenGL ES]
-    N --> O[Swap Buffers (eglSwapBuffers)]
+    N --> O[Swap Buffers - eglSwapBuffers]
     O --> M
 
     M -->|Dispatch Fail| P[Exit Rendering Loop]
