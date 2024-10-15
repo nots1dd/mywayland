@@ -72,7 +72,7 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    A[Start: main() Function] --> B[Connect to Wayland Display Server]
+    A[Start: main Function] --> B[Connect to Wayland Display Server]
     B --> C[Get Registry for Global Objects]
     C --> D[Add Listener for Registry]
     D --> E[Roundtrip to Retrieve Global Objects]
